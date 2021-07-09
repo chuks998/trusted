@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trusted choice | service</title>
+</head>
+<body>
+    <nav>
+        <div class="brand">
+            <strong>
+                trusted choice
+                <p>delivery service</p>
+            </strong>
+        </div>
+        <ul>
+            <li><a href="{% url 'home' %}">home</a></li>
+            <li><a href="{% url 'service' %}">our service</a></li>
+        </ul>
+    </nav>
+    <div class="banner">
+        <strong>next day delivery</strong>
+        <hr>
+        <p>we have options for your items to be delivered upon request the next day. <br> this option only includes deliveries in the united kingdom.</p>
+    </div>
+    <div class="banner">
+        <strong>international shipping</strong>
+        <hr>
+        <p>which ever country your item was to go, we are capable to take it there.<br>our familiarity and compliance with the international custom officers has earned us swift and save shipping through international borders.<br><br><em><b>note:</b>this service usually take upto 5 working days depending on the distance of the destination country.</em></p>
+    </div>
+    <div class="banner">
+        <strong>rental and lease</strong>
+        <hr>
+        <p>we also offer vechicle for rent or lease. options for driver(s) is available.</p>
+    </div>
+</div>
+</body>
+</html>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Lato;
+        font-size: 20px;
+        color: #555;
+        text-transform: capitalize;
+        text-decoration: none;
+        list-style: none;
+        transition: ease-in-out 1s;
+    }
+    body{
+        scroll-behavior: smooth;
+        background: linear-gradient(#55555599, #55555599), url('static/photos/pic2-save.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100vh;
+    }
+    nav{
+        width: 100vw;
+        display: block;
+        height: fit-content;
+        padding-top: 10px;
+    }
+    .brand{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .brand strong{
+        color: #fff;
+        font-size: 120%;
+    }
+    .brand p{
+        color: navy;
+        display: inline;
+    }
+    nav ul{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    nav ul li{
+        float: left;
+    }
+    nav ul li a{
+        margin: 0 10px;
+        font-size: 80%;
+        color: brown;
+    }
+
+    nav ul li a:checked{
+        color: brown;
+    }
+    nav ul li a:hover{
+        color: #fff;
+    }
+    .banner{
+        width: 100%;
+        height: fit-content;
+        padding: 10px 5px;
+        background-color: #222;
+        margin-top: 10px;
+    }
+    .banner strong{
+        color: #555;
+        font-size: 150%;
+        font-weight: 400;
+    }
+    .banner hr{
+        margin: 10px 0;
+    }
+    .banner p{
+        color: #f5f5f5;
+        font-size: 90%;
+        font-weight: 300;
+    }
+    .banner em{
+        color: #777;
+    }
+</style>
